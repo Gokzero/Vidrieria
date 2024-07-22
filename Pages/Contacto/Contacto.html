@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-mt-3">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                    <h1 class="navbar-brand">Alfredo Caballero Vidrios</h1>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Productos</a></li>
+                                    <li><a class="dropdown-item" href="#">Algo por acá</a></li>
+                                    <li><a class="dropdown-item" href="#">Otra cosa</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-primary text-white mb-2" href="#">Nuestros trabajos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-secondary text-white" href="#">Contactanos!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="container mt-3">
+    
+<form id="Contacto" method="post" class="row g-3">
+    <div class="col-md-6">
+        <label for="inputNombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputNombre">
+    </div>
+    <div class="col-md-6">
+        <label for="inputTel" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="Tel">
+    </div>
+    <div class="col-12">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail">
+    </div>
+    <div class="col-12">
+        <label for="inputDireccion" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="inputAddress">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputCiudad" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="inputCiudad">
+    </div>
+    <div class="col-md-6">
+        <label for="inputBarrio" class="form-label">Barrio</label>
+        <input type="text" class="form-control" id="inputBarrio">
+    </div>
+        <div class="col-12">
+        <label for="inputConsulta" class="form-label">Motivo de consulta</label>
+        <textarea class="form-control" id="inputConsulta" placeholder="Tipo de vidrio, medidas aprox, etc..." rows="4"></textarea>
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+            Quiero que me llamen!
+        </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+    </form>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
